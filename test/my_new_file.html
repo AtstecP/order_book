@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Market Order Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            margin-top: 10px;
+        }
+
+        .order-book {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .order-table th {
+            background-color: #f7f7f7;
+        }
+
+        .order-table th, .order-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .buy-order {
+            background-color: #b3ffb3; /* Light green for buy orders */
+            color: #005500; /* Dark green text color */
+        }
+
+        .sell-order {
+            background-color: #ffcccc; /* Light red for sell orders */
+            color: #aa0000; /* Dark red text color */
+        }
+    </style>
+    <script>
+        
+
+    </script>
+</head>
+<body>
+    <form method="post">
+    <input type="text" name="highPrice">
+    <button type="submit">use</button>
+    </form>
+    <h1>Stock Market Order Book</h1>
+    
+    <div class="order-book">
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="buy-order">
+                    <td>100</td>
+                    <td>10</td>
+                    <td>Buy</td>
+                </tr>
+                <tr class="buy-order">
+                    <td>99</td>
+                    <td>5</td>
+                    <td>Buy</td>
+                </tr>
+                <tr class="sell-order">
+                    <td>105</td>
+                    <td>8</td>
+                    <td>Sell</td>
+                </tr>
+                <tr class="sell-order">
+                    <td>103</td>
+                    <td>7</td>
+                    <td>Sell</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
